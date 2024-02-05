@@ -20,3 +20,11 @@ class Choice(models.Model):
     
     def __str__(self):
         return self.choice_text
+
+class User(models.Model):
+    id = models.ForeignKey
+    name = models.CharField(max_length=20)
+    sex = models.CharField(max_length=20)
+    
+    def __str__(self):
+        return self.id
